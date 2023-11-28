@@ -2,7 +2,7 @@ import streamlit as st
 from flask import Flask
 
 app = Flask(__name__)
-@app.route('/')
+@app.route('/api/data')
 def hello_world():
     return 'hello testkkk'
 if __name__ == '__main__':
