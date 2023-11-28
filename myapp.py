@@ -16,7 +16,7 @@ def start_flask():
         def serve_foo():
             return 'This page is served via Flask!'
 
-        app.run(port=8888)
+        app.run(port=5000)
 
 def reload_page():
     if must_reload_page:
