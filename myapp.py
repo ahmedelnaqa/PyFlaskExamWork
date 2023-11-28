@@ -8,14 +8,13 @@ def start_flask():
         st.already_started_server = True
         must_reload_page = True
 
-        from flask import Flask
+from flask import Flask
 
-        app = Flask(__name__)
-
-        @app.route('/foo')
-        def serve_foo():
-            return 'This page is served via Flask!'
-
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_world():
+        return 'hello testkkk'
+    if __name__ == '__main__':
         app.run(port=8888)
 
 def reload_page():
