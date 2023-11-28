@@ -1,5 +1,9 @@
 import streamlit as st
+from flask import Flask
 
-
-st.write("Helloo Samir")
-st.write("تمام")
+app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'hello testkkk'
+if __name__ == '__main__':
+    app.run()
