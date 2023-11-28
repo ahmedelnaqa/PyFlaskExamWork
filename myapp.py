@@ -10,12 +10,12 @@ def start_flask():
 
 from flask import Flask
 
-    app = Flask(__name__)
-    @app.route('/')
-    def hello_world():
-        return 'hello testkkk'
-    if __name__ == '__main__':
-        app.run(port=8888)
+app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'hello testkkk'
+if __name__ == '__main__':
+    app.run(port=8888)
 
 def reload_page():
     if must_reload_page:
