@@ -17,7 +17,7 @@ if not hasattr(st, 'already_started_server'):
 from flask import Flask
 
 app = Flask(__name__)
-@app.route('/')
+@app.route('/foo')
 def hello_world():
     return 'hello testkkk'
 if __name__ == '__main__':
